@@ -20,6 +20,6 @@ class OpenCommerceCoreInstaller extends LibraryInstaller
      */
     public function supports($packageType)
     {
-        return 'OpenCommerce-core' === $packageType;
+        return 'opencomerce-core' === $packageType;
     }
 }
