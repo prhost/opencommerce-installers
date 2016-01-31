@@ -1,0 +1,28 @@
+{
+  "name": "prhost/opencommerce-installers",
+  "description": "Package installers for OpenCommerce (opencart)",
+  "type": "composer-plugin",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Kallef Alexandre de Souza",
+      "email": "prhost@prhost.com.br"
+    }
+  ],
+  "require": {
+    "composer-plugin-api": "1.0.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Prhost\\ComposerInstallers": "src/"
+    }
+  },
+  "extra": {
+    "class": [
+      "Prhost\\ComposerInstallers\\OpenCommerceCoreInstallerPlugin",
+      "Prhost\\ComposerInstallers\\OpenCommerceExtensionInstallerPlugin",
+      "Prhost\\ComposerInstallers\\OpenCommerceThemeInstallerPlugin"
+    ]
+  }
+}
