@@ -5,14 +5,14 @@ namespace Prhost\System\ComposerInstallers;
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
 
-class OpenCommerceCoreInstaller extends LibraryInstaller
+class OpenCommerceOpencartInstaller extends LibraryInstaller
 {
     /**
      * {@inheritDoc}
      */
     public function getInstallPath(PackageInterface $package)
     {
-        return 'core/';
+        return 'opencart/';
     }
 
     /**
@@ -20,6 +20,6 @@ class OpenCommerceCoreInstaller extends LibraryInstaller
      */
     public function supports($packageType)
     {
-        return 'opencommerce-core' === $packageType;
+        return 'opencommerce-opencart' === $packageType;
     }
 }

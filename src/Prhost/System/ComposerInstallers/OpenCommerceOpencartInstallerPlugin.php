@@ -6,11 +6,11 @@ use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
 
-class OpenCommerceCoreInstallerPlugin implements PluginInterface
+class OpenCommerceOpencartInstallerPlugin implements PluginInterface
 {
     public function activate(Composer $composer, IOInterface $io)
     {
-        $installer = new OpenCommerceCoreInstaller($io, $composer);
+        $installer = new OpenCommerceOpencartInstaller($io, $composer);
         $composer->getInstallationManager()->addInstaller($installer);
     }
 }
