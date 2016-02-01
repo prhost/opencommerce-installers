@@ -1,2 +1,1 @@
-# opencommerce-installers
-Composer installers
+# OpenCommerce System
