@@ -1,6 +1,6 @@
 {
-  "name": "prhost/opencommerce-installers",
-  "description": "Package installers for OpenCommerce (opencart)",
+  "name": "prhost/opencommerce-system",
+  "description": "OpenCommerce System",
   "type": "composer-plugin",
   "minimum-stability": "dev",
   "license": "proprietary",
