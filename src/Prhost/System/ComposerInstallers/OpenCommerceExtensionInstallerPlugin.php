@@ -1,16 +1,16 @@
 <?php
 
-namespace Prhost\ComposerInstallers;
+namespace Prhost\System\ComposerInstallers;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
 
-class OpenCommerceThemeInstallerPlugin implements PluginInterface
+class OpenCommerceExtensionInstallerPlugin implements PluginInterface
 {
     public function activate(Composer $composer, IOInterface $io)
     {
-        $installer = new OpenCommerceThemeInstaller($io, $composer);
+        $installer = new OpenCommerceExtensionInstaller($io, $composer);
         $composer->getInstallationManager()->addInstaller($installer);
     }
 }

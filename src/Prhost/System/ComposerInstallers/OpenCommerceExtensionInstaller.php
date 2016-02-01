@@ -1,11 +1,11 @@
 <?php
 
-namespace Prhost\ComposerInstallers;
+namespace Prhost\System\ComposerInstallers;
 
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
 
-class OpenCommerceThemeInstaller extends LibraryInstaller
+class OpenCommerceExtensionInstaller extends LibraryInstaller
 {
     /**
      * {@inheritDoc}
@@ -14,9 +14,11 @@ class OpenCommerceThemeInstaller extends LibraryInstaller
     {
         $prettyName = explode('/', $package->getPrettyName());
         $devName = $prettyName[0];
-        $themeName = $prettyName[1];
+        $extensionName = $prettyName[1];
 
-        return 'theme/' . $devName . '/' . $themeName . '/';
+//            throw new \InvalidArgumentException('O pacote nao e uma extensao valida.');
+
+        return 'extensions/' . $devName . '/' . $extensionName . '/';
     }
 
     /**
@@ -24,6 +26,6 @@ class OpenCommerceThemeInstaller extends LibraryInstaller
      */
     public function supports($packageType)
     {
-        return 'opencommerce-theme' === $packageType;
+        return 'opencommerce-extension' === $packageType;
     }
 }

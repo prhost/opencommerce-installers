@@ -1,6 +1,6 @@
 <?php
 
-namespace Prhost\ComposerInstallers;
+namespace Prhost\System\ComposerInstallers;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;

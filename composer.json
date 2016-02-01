@@ -11,18 +11,19 @@
     }
   ],
   "require": {
-    "composer-plugin-api": "^1.0"
+    "composer-plugin-api": "^1.0",
+    "twig/twig": "^1.24"
   },
   "autoload": {
     "psr-0": {
-      "Prhost\\ComposerInstallers": "src/"
+      "Prhost\\System": "src/"
     }
   },
   "extra": {
     "class": [
-      "Prhost\\ComposerInstallers\\OpenCommerceCoreInstallerPlugin",
-      "Prhost\\ComposerInstallers\\OpenCommerceExtensionInstallerPlugin",
-      "Prhost\\ComposerInstallers\\OpenCommerceThemeInstallerPlugin"
+      "Prhost\\System\\ComposerInstallers\\OpenCommerceCoreInstallerPlugin",
+      "Prhost\\System\\ComposerInstallers\\OpenCommerceExtensionInstallerPlugin",
+      "Prhost\\System\\ComposerInstallers\\OpenCommerceThemeInstallerPlugin"
     ]
   }
 }
