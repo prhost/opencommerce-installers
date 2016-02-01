@@ -21,7 +21,7 @@
   },
   "extra": {
     "class": [
-      "Prhost\\System\\ComposerInstallers\\OpenCommerceCoreInstallerPlugin",
+      "Prhost\\System\\ComposerInstallers\\OpenCommerceOpencartInstallerPlugin",
       "Prhost\\System\\ComposerInstallers\\OpenCommerceExtensionInstallerPlugin",
       "Prhost\\System\\ComposerInstallers\\OpenCommerceThemeInstallerPlugin"
     ]
