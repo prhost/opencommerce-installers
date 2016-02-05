@@ -12,7 +12,7 @@ class OpenCommerceOpencartInstaller extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        return 'opencart/';
+        return 'core/';
     }
 
     /**
